@@ -12,8 +12,9 @@ function App() {
       setCounter(counter);
       return;
     }
-    counter = counter + 1;
-    setCounter(counter);
+    setCounter(counter + 1);
+
+    // setCounter((precounter) => precounter + 1); here you can acces the previous value of the counter and update it , usefull to ignore the batch behaviour at the time of the final execution.
   };
 
   const substract = () => {
